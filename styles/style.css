@@ -179,6 +179,7 @@ fieldset {
   width: fit-content;
   cursor: pointer;
   width: 100%;
+  height: 27px;
 }
 
 .search-form__pseudo-checkbox {
