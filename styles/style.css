@@ -18,6 +18,7 @@ html {
   background-color: #1b1919;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 h1,
@@ -52,13 +53,12 @@ ol {
   justify-content: space-between;
   align-items: center;
   gap: 40px;
-  height: 54px;
 }
 
 .content__list {
   position: relative;
   overflow: auto;
-  width: 400px;
+  width: 100%;
   height: 298px;
   padding: 2px;
 }
@@ -104,8 +104,8 @@ ol {
 .content__video-card-thumbnail {
   object-fit: cover;
   object-position: center;
-  max-width: 194px;
-  max-height: 103px;
+  width: 194px;
+  height: 103px;
   gap: 30px;
 }
 
@@ -176,7 +176,7 @@ fieldset {
 .search-form__label {
   display: flex;
   align-items: center;
-  width: fit-content;
+  justify-content: flex-end;
   cursor: pointer;
   width: 100%;
   height: 27px;
@@ -252,10 +252,10 @@ fieldset {
   line-height: normal;
 }
 
-.search-form__label-text:hover {
+.search-form__label:hover {
   text-decoration: underline;
 }
-/*добавить только боковые границы*/
+
 .search-form__textfield:active {
   outline: 1px solid #fff;
 }
@@ -286,8 +286,8 @@ fieldset {
 }
 
 .button:focus-visible {
-  border: 3px solid #fff;
-  outline-offset: 1px;
+  outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 
 .content__list-item:hover {
@@ -312,4 +312,8 @@ fieldset {
 
 .content__card-link_current {
   background-color: #545050;
+}
+
+.time {
+  margin-left: 5px;
 }
