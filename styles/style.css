@@ -57,10 +57,13 @@ ol {
 
 .content__list {
   position: relative;
-  overflow: auto;
-  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /*в пачке наставник писал что допустимо если карточка "наезжает" на скролл, 
+  а так все размеры по макету*/
   height: 298px;
   padding: 2px;
+/*паддинг небольшой чтобы видно было подчеркивание*/
 }
 
 .content__video-card {
@@ -69,7 +72,7 @@ ol {
 }
 
 .content__details {
-  width: 100%;
+  width: 399px;
 }
 
 .title {
@@ -95,6 +98,16 @@ ol {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.content__list-item {
+  padding: 2px;
+  width: 399px;
+ 
+}
+
+.content__video-card-title {
+  width: 200px;
 }
 
 .content__list-item:last-child {
@@ -189,6 +202,7 @@ fieldset {
   background-color: #1b1919;
   border: 1px solid #fff;
   margin-right: 5px;
+  margin-top: -3px;
 }
 
 .search-form__pseudo-checkbox::before {
@@ -317,3 +331,4 @@ fieldset {
 .time {
   margin-left: 5px;
 }
+
