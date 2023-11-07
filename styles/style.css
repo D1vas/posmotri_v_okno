@@ -265,6 +265,10 @@ fieldset {
   line-height: normal;
 }
 
+.search-form__fieldset-second {
+  width: 212px;
+}
+
 .search-form-underline:hover {
   text-decoration: underline;
 }
@@ -326,8 +330,3 @@ fieldset {
 .content__card-link_current {
   background-color: #545050;
 }
-
-.time {
-  margin-left: 5px;
-}
-
